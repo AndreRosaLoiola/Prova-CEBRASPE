@@ -1,0 +1,28 @@
+﻿@model List<UsuarioModel>
+
+<h1>Listagem de Usuários</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Identidade</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.Cpf</td>
+                <td>@usuario.Nome</td>
+                <td>@usuario.Identidade</td>
+                <td>@usuario.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Relatorio", "Usuario")" target="_blank">Gerar Relatório</a>
+

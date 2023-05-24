@@ -1,0 +1,59 @@
+﻿@model UsuarioModel
+
+
+
+@{
+    ViewData["Criar"] = "Criar";
+
+
+
+}
+
+
+<form  asp-controller="Usuario" asp-action="Adicionar" method="post">
+
+
+   <label for=" CPF" class="form-label">CPF</labelfor>
+       <input type="text" asp-for="Cpf" class="form-control " />
+
+   <label for="Nome" class="form-label">Nome</labelfor>
+    <input type="text" asp-for="Nome" class="form-control " />
+            
+    
+    
+    <label for="Email" class="form-label"> Email</labelfor>
+    <input type="text" asp-for="Email" class="form-control " />
+               
+    
+    <label for=" RG" class="form-label">RG</labelfor>
+    <input type="text" asp-for="Identidade" class="form-control " />
+
+      <button type="submit">Confirmar</button> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
